@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../bootstrap-4.3.1-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Armamos un formulario</h1>
+    <form action="ejemploTags.html">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          size="35"
+          maxlength="35"
+          placeholder="poner su nombre aqui"
+        />
+
+        <label>Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="apellido"
+          size="35"
+          maxlength="35"
+        />
+
+        <label>Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          size="35"
+          maxlength="35"
+        />
+
+        <br />
+        <!-- solo puedo seleccionar 1 por lo que es excluyente -->
+        <input type="radio" id="sexo" value="varon" id="varon" />
+        <label>Varon</label>
+
+        <input type="radio" id="sexo" value="mujer" id="mujer" />
+        <label>Mujer</label>
+
+        <input type="radio" id="sexo" value="otro" id="otro" />
+        <label>Otro</label>
+
+        <br />
+        <!-- puedo seleccionar mas de 1 y marcarlo, es incluyente-->
+        <div class="form-check mb-2 mr-sm-2">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="info"
+            id="cd"
+            value="cd"
+          />
+          <label class="form-check-label">Certificado deposito</label>
+<br>
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="info"
+            id="hipo"
+            value="hipo"
+          />
+          <label class="form-check-label">Hipoteca</label>
+          <br>
+        </div>
+        <br />
+        <textarea rows="3" cols="60" name="comentarios"></textarea>
+        <!-- -->
+        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+        <button type="reset" class="btn btn-danger mb-1">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+h2 {
+    color:rgb(23, 38, 173);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Comentario en CSS*/
+div.ref1{
+    background-color: chartreuse;
+}
+div.ref2 {
+    background-color: aqua;
+}
